@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Confirme a Senha') }}</div>
+                    <div class="card-header">{{ __('Confirmar Senha') }}</div>
 
                     <div class="card-body">
                         {{ __('Por favor, confirme sua senha antes de continuar.') }}
@@ -15,7 +15,7 @@
 
                             <div class="form-group row">
                                 <label for="password"
-                                    class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                                    class="col-md-4 col-form-label text-md-right">{{ __('Senha') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="password" type="password"
@@ -33,12 +33,12 @@
                             <div class="form-group row mb-0">
                                 <div class="col-md-8 offset-md-4">
                                     <button type="submit" class="btn btn-primary">
-                                        {{ __('Confirme a Senha') }}
+                                        {{ __('Confirm Password') }}
                                     </button>
 
                                     @if (Route::has('password.request'))
                                         <a class="btn btn-link" href="{{ route('password.request') }}">
-                                            {{ __('Esqueceu sua senha?') }}
+                                            {{ __('Esqueceu Sua Senha?') }}
                                         </a>
                                     @endif
                                 </div>

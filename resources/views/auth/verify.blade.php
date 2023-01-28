@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.front')
 
 @section('content')
     <div class="container">
@@ -10,11 +10,11 @@
                     <div class="card-body">
                         @if (session('resent'))
                             <div class="alert alert-success" role="alert">
-                                {{ __('Um novo link de verificação foi enviado para seu endereço de e-mail.') }}
+                                {{ __('Um novo link de verificação foi enviado para o seu endereço de e-mail.') }}
                             </div>
                         @endif
 
-                        {{ __('Antes de continuar, verifique seu e-mail para obter um link de verificação.') }}
+                        {{ __('Antes de prosseguir, verifique seu e-mail em busca de um link de verificação.') }}
                         {{ __('Se você não recebeu o e-mail') }},
                         <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
                             @csrf
